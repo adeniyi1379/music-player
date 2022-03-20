@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Prata|Inter">
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-8" id="">
+				<img src="record.png" id="indicator">
+				<div class="playlist-info" id="playlist-info"></div>
+			</div>
+			<div class="col-4">
+				<div class="music-info">
+					<h3 id="music-artist"></h3>
+					<p id='music-title'></p>
+				</div>
+				<div class="vol-track">
+					<div class="vol">
+						<label for="volume"><i class="fa fa-volume-up"></i></label>
+						<input type="range" name="volume" min="0" max="100" value="0" id="volume">
+					</div>
+					<div class="track">
+						<label for="track"><i class="fa fa-music"></i></label>
+						<input type="range" name="track" min="0" max="100" value="0" id="track">
+					</div>
+				</div>
+				<div class="controls">
+					<button id="backward" class="control"><i class="fa fa-backward fa-2x" aria-hidden="true"></i></button>
+					<button id="play-pause" class="control"><i class="fa fa-play fa-2x"></i></button>
+					<button id="forward" class="control"><i class="fa fa-forward fa-2x"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<audio controls id="audio" preload="none" loop muted >
+	</audio>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
